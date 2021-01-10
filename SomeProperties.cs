@@ -4,4 +4,4 @@
   <Setter Property = "UseLayOutRounding" Value = "True"/>
 </Style>
 
-
+#Magical scrollView
