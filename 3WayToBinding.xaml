@@ -1,0 +1,9 @@
+<!--If you want to bind to another property on the object:-->
+{Binding Path=PathToProperty, RelativeSource={RelativeSource Self}}
+<!--If you want to get a property on an ancestor:-->
+{Binding Path=PathToProperty,
+RelativeSource={RelativeSource AncestorType={x:Type typeOfAncestor}}}
+<!--If you want to get a property on templated parent (can do 2 way bindings in a ControlTemplate)-->
+{Binding Path=PathToProperty, RelativeSource={RelativeSource TemplatedParent}}
+<!--Or shorter (this only works for OneWay bindings):-->
+{TemplateBinding Path=PathToProperty}
